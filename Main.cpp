@@ -889,23 +889,23 @@ void libChair_main()
     //PVZ2HookFunction(0x11F72B0, (void*)hkNPCDataSheetCtor, (void**)&oNPCDataSheetCtor);
     // i should make softcode boss icon as level module xd
     //PVZ2HookFunction(0x540938, (void*)hkBossProgressMeterInit, (void**)&oBossProgressMeterInit);
-    PVZ2HookFunction(0xC6D080, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
-    PVZ2HookFunction(0x11797B4, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
-    PVZ2HookFunction(0x10680BC, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
-    PVZ2HookFunction(0x14665C4, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
+    //PVZ2HookFunction(0xC6D080, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
+    //PVZ2HookFunction(0x11797B4, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
+    //PVZ2HookFunction(0x10680BC, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
+    //PVZ2HookFunction(0x14665C4, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
 
-    PVZ2HookFunction(0xC6D080, (void*)PlantType::construct, (void**)&PlantType::oPlantTypeConstruct);
-    PVZ2HookFunction(0xC6BF48, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
-    PVZ2HookFunction(0x10680BC, (void*)ZombieType::construct, (void**)&ZombieType::oZombieTypeConstruct);
-    PVZ2HookFunction(0x106828C, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
+    //PVZ2HookFunction(0xC6D080, (void*)PlantType::construct, (void**)&PlantType::oPlantTypeConstruct);
+    //PVZ2HookFunction(0xC6BF48, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
+    //PVZ2HookFunction(0x10680BC, (void*)ZombieType::construct, (void**)&ZombieType::oZombieTypeConstruct);
+    //PVZ2HookFunction(0x106828C, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
     PVZ2HookFunction(0xC136A4, (void*)ZombiePropertySheet::construct, (void**)&ZombiePropertySheet::oZombiePropsConstruct);
     PVZ2HookFunction(0xDA69D4, (void*)ZombiePropertySheet::buildSymbols, (void**)&ZombiePropertySheet::oZombiePropsBuildSymbols);
 
     PVZ2HookFunction(0xC4987C, (void*)hkEffectCondition, (void**)&oEffCond);
     PVZ2HookFunction(0xC4BC48, (void*)hkRemoveEffectCondition, (void**)&oRemoveEffCond);
     PVZ2HookFunction(0x677B40, (void*)hkZombieConditionTrackerUpdate, (void**)&oZombieConditionTrackerUpdate);
-    PVZ2HookFunction(0xA9E25C, (void*)hkBoardWaveFunc, (void**)&oBoardWaveFunc);
-    PVZ2HookFunction(0xC1D1FC, (void*)hkInitZombiePianoList, (void**)&oInitZombiePianoList);
+    //PVZ2HookFunction(0xA9E25C, (void*)hkBoardWaveFunc, (void**)&oBoardWaveFunc);
+    //PVZ2HookFunction(0xC1D1FC, (void*)hkInitZombiePianoList, (void**)&oInitZombiePianoList);
     PVZ2HookFunction(0xAA0C40, (void*)hkBoardRender, (void**)&oBoardRender);
     PVZ2HookFunction(0x1273244, (void*)hkFire, (void**)&oFire);
     PVZ2HookFunction(0x1001C04, (void*)hkFixTeleportatoMineTeleport, (void**)&oTeleportatoMineTeleport);
@@ -971,8 +971,8 @@ void libChair_main()
     GridItemSpeakerBass::modInit();
     GridItemSpeakerBassProps::modInit();
     ZombiePharaoh::ModInit();
-    ZombieCamelProps::modInit();
-    ZombieCamelTouchProps::modInit();
+    //ZombieCamelProps::modInit();
+    //ZombieCamelTouchProps::modInit();
     ZombieFairyTaleImp::modInit();
     ZombieFairyTaleImpProps::modInit();
     ZombieAnimRig_JourneyToTheWestAllStar::modInit();
