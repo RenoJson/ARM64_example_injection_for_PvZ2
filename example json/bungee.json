@@ -117,3 +117,22 @@
 				]
 			}
 		},
+		{
+			"objclass": "ZombieAnimRigTemplateConfig",
+			"aliases": [
+				"BungeeAnimRigDefault"
+			],
+			"objdata": {
+				"LowerArmLayers": [],
+				"UpperArmLayers": [],
+				"HeadLayers": [
+					"tou01"
+				],
+				"ParticleHeadSpriteName": "particle_head",
+				"ParticleArmSpriteName": "particle_arm",
+				"IdleAnimName": "idle",
+				"WalkAnimName": "idle",
+				"EatAnimName": "idle",
+				"DieAnimName": "death"
+			}
+		},
