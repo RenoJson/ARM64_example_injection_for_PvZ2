@@ -1,6 +1,72 @@
 #pragma once
 #include "Zombie.h"
 #include "Plant.h"
+#include <cmath>
+
+// Misc function begin here
+inline float SexyEasing(int curveType, float t)
+{
+	float v, temp;
+	switch (curveType)
+	{
+	case 1: // Linear
+		return t;
+	case 2: // Quad In
+		return t * t;
+	case 3: // Quad Out
+		return (t * 2.0f) - (t * t);
+	case 4: // SmoothStep of SmoothStep
+		v = (t * 3.0f * t) + (-2.0f * t * t * t);
+		return (v * v * 3.0f) - (v * v * (v * 2.0f));
+	case 5: // SmoothStep (Cubic InOut)
+		return (t * 3.0f * t) + (-2.0f * t * t * t);
+	case 6: // Nested Quad InOut
+		if (t > 0.5f) {
+			temp = (t - 0.5f) * 2.0f;
+			t = (temp * temp * 0.5f) + 0.5f;
+			if (t <= 0.5f) {
+				temp = t * 2.0f;
+				return ((temp * 2.0f) - (temp * temp)) * 0.5f;
+			}
+			temp = (t - 0.5f) * 2.0f;
+			return (temp * temp * 0.5f) + 0.5f;
+		}
+		temp = t * 2.0f;
+		t = ((temp * 2.0f) - (temp * temp)) * 0.5f;
+		if (t > 0.5f) {
+			temp = (t - 0.5f) * 2.0f;
+			return (temp * temp * 0.5f) + 0.5f;
+		}
+		temp = t * 2.0f;
+		return ((temp * 2.0f) - (temp * temp)) * 0.5f;
+	case 7: // Quad InOut
+		if (t > 0.5f) {
+			temp = (t - 0.5f) * 2.0f;
+			return (temp * temp * 0.5f) + 0.5f;
+		}
+		temp = t * 2.0f;
+		return ((temp * 2.0f) - (temp * temp)) * 0.5f;
+	case 8: // Triangle
+		return 1.0f - std::abs(1.0f - (t * 2.0f));
+	case 9: // Triangle Squared
+		v = std::abs(1.0f - (t * 2.0f));
+		return (1.0f - v) * (1.0f - v);
+	case 10: // Triangle Quad Out
+		t = 1.0f - std::abs(1.0f - (t * 2.0f));
+		return (t * 2.0f) - (t * t);
+	case 11: // Back In
+		return (t * 4.0f * t) - (t * 3.0f);
+	case 12: // Sine
+		return std::sin(t * 6.2832f);
+	case 13: // Smooth Sine
+		return std::sin(((t * 3.0f * t) + (-2.0f * t * t * t)) * 6.2832f);
+	case 14: // Half Sine Shifted
+		return (std::sin(t * 6.2832f) + 1.0f) * 0.5f;
+	default:
+		return 0.0f;
+	}
+}
+
 // Zombie Helper Function Start Here
 
 inline float ZombieFacing(Zombie* zombie) {

@@ -9,7 +9,10 @@
 #include "DamageLifetime.h"
 #include "PlantIceBloom.h"
 #include "ZombieImp.h"
+#include "Ladder.h"
 #include "ZombieWithAction.h"
+#include "LevelModule.h"
+#include "TimeMgr.h"
 
 
 #define VFUNC_CAN_DROP_ARM        81
@@ -22,7 +25,7 @@
 
 
 float hkGetHeadDrop(Zombie* thisPtr) {
-    auto props = reinterpret_cast<ZombiePropertySheet*>(thisPtr->m_propertySheet.Get()); 
+    auto props = reinterpret_cast<ZombiePropertySheet*>(thisPtr->m_propertySheet.Get());
     if (props->SkipHeadDropState)
     {
         return -1.0f;
@@ -102,14 +105,14 @@ void hkZombieTakeRealDamage(Zombie* thisPtr, DamageInfo* damageInfo)
             }
             if (!isFatalSpecialDeath)
             {
-                CallFunc<void>(0xC47944, thisPtr); 
+                CallFunc<void>(0xC47944, thisPtr);
             }
         }
     }
 
     bool isIceBlocked = ZombieHasCondition(thisPtr, zombie_condition_iceblocked);
 
-    
+
     uint64_t SPECIAL_DEATH_MASK = damage_instantly_fatal | damage_lightning | damage_ash_death |
         damage_mower | damage_plantify_on_death | damage_no_bleed_on_death;
 
@@ -119,18 +122,23 @@ void hkZombieTakeRealDamage(Zombie* thisPtr, DamageInfo* damageInfo)
         {
             if ((damageInfo->m_flags & SPECIAL_DEATH_MASK) == 0)
             {
-                if (CallVirtualFunc<bool>(thisPtr, VFUNC_DUMMY_TRUE)) 
+                if (CallVirtualFunc<bool>(thisPtr, VFUNC_DUMMY_TRUE))
                 {
-                    CallVirtualFunc<void>(thisPtr, VFUNC_ENTER_BLEEDING); 
-                    CallFunc<void>(0xC47BF8, thisPtr, damageInfo); 
-                    CallFunc<void>(0xC47E24, thisPtr, damageInfo->m_flags); 
+                    CallVirtualFunc<void>(thisPtr, VFUNC_ENTER_BLEEDING);
+                    CallFunc<void>(0xC47BF8, thisPtr, damageInfo);
+                    CallFunc<void>(0xC47E24, thisPtr, damageInfo->m_flags);
                     return;
                 }
             }
 
-            if ((damageInfo->m_flags & damage_no_bleed_on_death) != 0)
+            else if ((damageInfo->m_flags & damage_no_bleed_on_death) != 0)
             {
                 CallFunc<void>(0xC47E24, thisPtr, damageInfo->m_flags);
+                CallFunc<void>(0xC48338, thisPtr, damageInfo);
+                return;
+            }
+            else
+            {
                 CallFunc<void>(0xC48338, thisPtr, damageInfo);
                 return;
             }
@@ -145,7 +153,7 @@ void hkZombieTakeRealDamage(Zombie* thisPtr, DamageInfo* damageInfo)
             return;
         }
 
-        if ((thisPtr->m_zombieFlags & 0x200) != 0) 
+        if ((thisPtr->m_zombieFlags & 0x200) != 0)
         {
             return;
         }
@@ -372,7 +380,7 @@ bool hkIsDeadOrDying(Zombie* thisPtr)
 {
     int stateId = thisPtr->m_entityState.m_id;
 
-    if ((stateId >= 3 && stateId <= 8) || stateId == 14)
+    if ((stateId >= 4 && stateId <= 8) || stateId == 14)
     {
         return true;
     }
@@ -395,7 +403,7 @@ bool hkCanBeTargetted(Zombie* thisPtr, char targetingFlags) {
     {
         if ((state >= 4 && state <= 9) || state == 14)
         {
-            return false; 
+            return false;
         }
 
         if (state == 10 || state == 11)
@@ -419,7 +427,7 @@ bool hkCanBeTargetted(Zombie* thisPtr, char targetingFlags) {
         return false;
     }
 
-    if (state <= 12) 
+    if (state <= 12)
     {
         unsigned int isRising = 0x1600;
         if (((1 << state) & isRising) != 0)
@@ -433,7 +441,7 @@ bool hkCanBeTargetted(Zombie* thisPtr, char targetingFlags) {
         if ((targetingFlags & 2) != 0)
         {
             if (((zombieFlags & 0x40) != 0) || (thisPtr->m_position.z > 0.0f)) {
-                return true; 
+                return true;
             }
         }
         return false;
@@ -473,14 +481,15 @@ void hkUpdate(Zombie* thisPtr) {
         ZombieRemoveCondition(thisPtr, zombie_condition_decaypoison);
         ZombieRemoveCondition(thisPtr, zombie_condition_poisoned);
     }
-
-    if (((thisPtr->m_zombieFlags & 4) != 0) && 
-        ZombieHasCondition(thisPtr, zombie_condition_warpingOut))
-    {
-        auto rig = reinterpret_cast<ZombieAnimRig*>(thisPtr->m_animRig.Get());
-        (thisPtr->m_zombieFlags & 2) != 0;
-        CallVirtualFunc<void>(rig, 46);
-        ZombieEnterState(thisPtr, 4, 0);
+    if (TimeMgr::GetInstance()->m_curTime >= thisPtr->m_timeToKill) {
+        auto props = reinterpret_cast<ZombiePropertySheet*>(thisPtr->m_propertySheet.Get());
+        if (!ZombieIsDeadOrDying(thisPtr) && !ZombieIsInState(thisPtr, 3) && props->TimeToKillInSeconds > 0.0f) {
+            DamageInfo zDmg;
+            zDmg.m_attacker = thisPtr;
+            zDmg.m_damage = 100000.0f;
+            zDmg.m_flags = DamageTypeFlags::damage_instantly_fatal;
+            CallVirtualFunc<void>(thisPtr, 36, &zDmg);
+        }
     }
 }
 
@@ -534,15 +543,14 @@ int hkCalcProgressMeterHP(Zombie* zombie) {
 }
 void PatchZombieSetCondition()
 {
-    uint32_t value = 0x7100011F; // restore damage flash for corpse by changing state cant get condition to idle
+    uint32_t value = 0x7144011F; // restore damage flash for corpse by changing state cant get condition to 0x100000
     ReplaceBytes(0xC43898, &value, 4);
 }
 
 void PatchZombieUpdate()
 {
-    uint32_t value = 0x52883E0A; 
+    uint32_t value = 0x52883E0A;
     ReplaceBytes(0xC3D908, &value, 4);
-    ReplaceBytes(0xC3D978, &value, 4);
     uint32_t flag = 0x52801008;
     ReplaceBytes(0xC3DCBC, &flag, 4);
 
@@ -596,8 +604,47 @@ BoardEntity* FindKnightTarget(ZombieDarkKing* thisPtr)
     return bestTarget;
 }
 
+void hkPlantifyOnLoop(Zombie* thisPtr)
+{
+    float duration = 0.5f;
+    float progress = thisPtr->m_elapsedTimeInState / duration;
+
+    if (progress <= 0.0f)
+    {
+        thisPtr->m_scale = 1.0f;
+    }
+    else if (progress >= 1.0f)
+    {
+        thisPtr->m_scale = 0.0f;
+
+        CallFunc<void>(0xC53A48, thisPtr);
+        MessageRouter::GetInstance()->ExecuteMessage((void*)getActualOffset(0xC35754), thisPtr, thisPtr);
+        CallFunc<void>(0x8AEB28, thisPtr);
+    }
+    else
+    {
+        thisPtr->m_scale = 1.0f - SexyEasing(3, progress);
+    }
+}
+
+void hkBleedingOutOnLoop() {}
+
+bool hkCheckDoesZombiesWin(ZombiesAteYourBrainsModule* module, RtWeakPtr<Zombie> zombiePtr) {
+    auto props = reinterpret_cast<ZombiesAteYourBrainsProperties*>(module->m_propertySheet.Get());
+    auto zombie = reinterpret_cast<Zombie*>(zombiePtr.Get());
+    auto zProps = reinterpret_cast<ZombiePropertySheet*>(zombie->m_propertySheet.Get());
+    return zProps->CanTriggerZombieWin = true
+        && !ZombieIsInState(zombie, 3)
+        && !ZombieIsDeadOrDying(zombie)
+        && (zombie->m_teamFlags & 1) == 0
+        && zombie->m_position.x + -200.0f <= props->ZombieWinPositionX;
+}
+
 void ZombiePharaoh::ModInit() {
     LOGI("ZombiePharaoh init");
+    PVZ2HookFunction(0xC51930, (void*)hkBleedingOutOnLoop, nullptr);
+    PVZ2HookFunction(0x14369B8, (void*)hkCheckDoesZombiesWin, nullptr);
+    PVZ2HookFunction(0xC53778, (void*)hkPlantifyOnLoop, nullptr);
     PVZ2HookFunction(0xAFAE10, (void*)FindKnightTarget, nullptr);
     PVZ2HookFunction(0xC3D7A0, (void*)hkUpdate, (void**)&oUpdate);
     PVZ2HookFunction(0xC4126C, (void*)hkCalcProgressMeterHP, nullptr);

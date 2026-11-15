@@ -307,5 +307,8 @@
     <ClInclude Include="PvZ2\Ladder.h" />
     <ClInclude Include="PvZ2\ZombieZomboni.h" />
     <ClInclude Include="PvZ2\ZombieBobsled.h" />
+    <ClInclude Include="PvZ2\WaveManager.h" />
+    <ClInclude Include="PvZ2\TimeLine.h" />
+    <ClInclude Include="PvZ2\ProfileUtils.h" />
   </ItemGroup>
 </Project>

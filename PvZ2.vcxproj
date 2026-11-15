@@ -97,6 +97,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>D:\PVZ2 64bit lib\Public Template;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <IncludePath>D:\PVZ2 64bit lib\PvZ2;$(IncludePath)</IncludePath>
@@ -331,10 +332,13 @@
     <ClInclude Include="PvZ2\PlantUnchartedHaystack.h" />
     <ClInclude Include="PvZ2\PlantZhongKuiLycoris.h" />
     <ClInclude Include="PvZ2\PopAnimRig.h" />
+    <ClInclude Include="PvZ2\ProfileUtils.h" />
     <ClInclude Include="PvZ2\Projectile.h" />
     <ClInclude Include="PvZ2\PropertySheetBase.h" />
     <ClInclude Include="PvZ2\PVZDB.h" />
+    <ClInclude Include="PvZ2\TimeLine.h" />
     <ClInclude Include="PvZ2\TombraiserProjectileProps.h" />
+    <ClInclude Include="PvZ2\WaveManager.h" />
     <ClInclude Include="PvZ2\ZombieAnimRig_MausoleumArcher.h" />
     <ClInclude Include="PvZ2\ZombieAnimRig_MausoleumAssasin.h" />
     <ClInclude Include="PvZ2\ZombieAnimRig_MausoleumCursedBase.h" />

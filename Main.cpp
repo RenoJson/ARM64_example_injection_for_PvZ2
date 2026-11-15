@@ -108,6 +108,7 @@
 #include <PvZ2/ZombieCatapult.h>
 #include <PvZ2/ZombieLadder.h>
 #include <PvZ2/Ladder.h>
+#include <PvZ2/ProfileUtils.h>
 
 
 // TODO: Make every typedef function became a wrapper ig
@@ -867,6 +868,31 @@ void hkZombieHypnotized(Zombie* zombie, bool healOnHypnotism, Plant* instigator,
     oZombieHypnotize(zombie, healOnHypnotism, instigator, healPercent);
     hkHealHelm(zombie);
 }
+
+typedef void (*DrawLevelObjective)(std::vector<ProfileUtils::ChallengeStatusHolder>*, ChallengeModule*, int);
+DrawLevelObjective oDrawLevelObjective = nullptr;
+
+void hkConstructChallengeStatus(std::vector<ProfileUtils::ChallengeStatusHolder>* challengeList,
+    ChallengeModule* cm, int flags)
+{
+    oDrawLevelObjective(challengeList, cm, flags);
+    auto* props = reinterpret_cast<ChallengeModuleProperties*>(cm->m_propertySheet.Get());
+    size_t n = std::min(challengeList->size(), (size_t)props->Challenges.size());
+    for (size_t i = 0; i < n; i++) {
+        auto& group = props->Challenges[i];
+        if (group.empty()) continue;
+        auto& descs = (*challengeList)[i].challengeDesc;
+
+        std::vector<std::wstring> fresh;
+        fresh.reserve(group.size());
+        for (auto& wp : group) {
+            auto* cfg = wp.Get();
+            fresh.push_back(cfg ? CallVirtualFunc<std::wstring>(cfg, 15) : std::wstring());
+        }
+        descs.assign(fresh.begin(), fresh.end());
+    }
+}
+
 #pragma region Build Symbol Funcs
 
 Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PlantType::oPlantTypeBuildSymbols = nullptr;
@@ -920,6 +946,7 @@ void libChair_main()
     PVZ2HookFunction(0xC47450, (void*)hkHealHelm, nullptr);
     PVZ2HookFunction(0x168D580, (void*)hkLoadAndDecode, (void**)&oLoadAndDecode);
     PVZ2HookFunction(0x176D6CC, (void*)hkGetGLTextureTotalSize, (void**)&oGetGLTextureTotalSize);
+    PVZ2HookFunction(0x8C3B9C, (void*)hkConstructChallengeStatus, (void**)&oDrawLevelObjective);
 
     ProjectileActions::modInit(); 
     ZombieTypeTemplate::modInit();
