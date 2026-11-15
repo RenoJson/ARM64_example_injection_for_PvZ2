@@ -1,0 +1,590 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "west_bullrider"
+            ],
+            "objdata": {
+                "TypeName": "west_bullrider",
+                "IntegerID": 54,
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieBullRiderDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieWestBullRiderGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieCowboyBullRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_BullRider",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+                "HeadEffectOffsetAdjust": {
+                    "x": 10,
+                    "y": -10
+                },
+                "HomeWorld": "cowboy",
+                "Placeable": true,
+                "HastyOnStart": false
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "west_bull"
+            ],
+            "objdata": {
+                "TypeName": "west_bull",
+                "IntegerID": 55,
+                "ZombieClass": "ZombieBull",
+                "Properties": "RTID(ZombieBullDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieWestBullRiderGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieCowboyBullRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Bull",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+                "HeadEffectOffsetAdjust": {
+                    "x": 60,
+                    "y": -25
+                },
+                "HomeWorld": "cowboy",
+                "HastyOnStart": false
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "west_bullrider_veteran"
+            ],
+            "objdata": {
+                "TypeName": "west_bullrider_veteran",
+                "IntegerID": 56,
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieBullRiderVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieWestBullRiderGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieCowboyBullRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_BullRider",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER_VETERAN",
+                "HeadEffectOffsetAdjust": {
+                    "x": 10,
+                    "y": -10
+                },
+                "HomeWorld": "cowboy",
+                "Placeable": true,
+                "HastyOnStart": false
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "west_bull_veteran"
+            ],
+            "objdata": {
+                "TypeName": "west_bull_veteran",
+                "IntegerID": 57,
+                "ZombieClass": "ZombieBullVeteran",
+                "Properties": "RTID(ZombieBullVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieWestBullRiderGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieCowboyBullRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Bull",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER_VETERAN",
+                "HeadEffectOffsetAdjust": {
+                    "x": 60,
+                    "y": -25
+                },
+                "HomeWorld": "cowboy",
+                "HastyOnStart": false
+            }
+        },
+		{
+			"aliases": [
+				"ZombieBullRiderDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"HypnoshroomEffectOffset": {
+					"x": -6,
+					"y": 36
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 0.800000,
+					"y": 0.800000
+				},
+				"Speed": 0.220000,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieBullRiderVeteranDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 450,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"HypnoshroomEffectOffset": {
+					"x": -6,
+					"y": 36
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ZombieArmorProps": [
+					"RTID(VetRiderHelmDefault@ArmorTypes)"
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 0.800000,
+					"y": 0.800000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 100,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieBullDefault"
+			],
+			"objclass": "ZombieBullProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 106,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 40,
+					"mX": -45,
+					"mY": 10
+				},
+				"BuckRect": {
+					"mX": -95,
+					"mY": 10,
+					"mWidth": 40,
+					"mHeight": 125
+				},
+				"BullEnterSpeed": 0.300000,
+				"BullPawLocation": 810,
+				"BullRunSpeed": 1,
+				"RiderType": "west_bullrider",
+				"RiderLayersToHide": [
+					"zombie_cowboy_hat_back",
+					"zombie_cowboy_hat_front",
+					"zombie_imp_arm_inner_lower",
+					"zombie_imp_arm_inner_upper",
+					"zombie_imp_arm_outer_lower",
+					"zombie_imp_arm_outer_upper_01",
+					"zombie_imp_arm_outer_upper_02",
+					"zombie_imp_arms_outer_upper",
+					"zombie_imp_eye",
+					"zombie_imp_eye_sm",
+					"zombie_imp_hand_inner",
+					"zombie_imp_hand_outer",
+					"zombie_imp_jaw",
+					"zombie_imp_leg_inner_lower",
+					"zombie_imp_leg_inner_upper",
+					"zombie_imp_leg_outer_lower",
+					"zombie_imp_leg_outer_upper",
+					"zombie_imp_pupil",
+					"zombie_imp_skull",
+					"zombie_imp_toe_inner",
+					"zombie_imp_toe_outer",
+					"zombie_imp_torso",
+					"zombie_imp_waist",
+					"zombie_imp_leg_outer_upper",
+					"_zombie_imp_head_top"
+				],
+				"LaunchDistance": 256,
+				"LaunchHeight": 250,
+				"LaunchAirTime": 0.750000,
+				"RiderSpawnOffset": {
+					"x": 60,
+					"y": 0,
+					"z": 50
+				},
+				"isCavalry": false,
+				"UseGetUpAnim": true,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 126,
+					"mHeight": 125
+				},
+				"Hitpoints": 1300,
+				"HypnoshroomEffectOffset": {
+					"x": 35,
+					"y": 20
+				},
+				"Size": "large",
+				"IsValidPinchTarget": false,
+				"MetallicBodyParts": true,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "BullRunSpeed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 1
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.160000,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 600,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieBullVeteranDefault"
+			],
+			"objclass": "ZombieBullVeteranProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 106,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 40,
+					"mX": -45,
+					"mY": 10
+				},
+				"BuckRect": {
+					"mHeight": 125,
+					"mWidth": 40,
+					"mX": -45,
+					"mY": 10
+				},
+				"BullEnterSpeed": 0.600000,
+				"BullPawLocation": 810,
+				"BullRammingDamage": 1500,
+				"BullRunAgainDelay": 3,
+				"BullRunSpeed": 2,
+				"RiderType": "west_bullrider_veteran",
+				"RiderLayersToHide": [
+					"helm",
+					"zombie_imp_arm_inner_lower",
+					"zombie_imp_arm_inner_upper",
+					"zombie_imp_arm_outer_lower",
+					"zombie_imp_arm_outer_upper_01",
+					"zombie_imp_arm_outer_upper_02",
+					"zombie_imp_arms_outer_upper",
+					"Symbol 57",
+					"zombie_imp_hand_inner",
+					"zombie_imp_hand_outer",
+					"zombie_imp_jaw",
+					"zombie_imp_leg_inner_lower",
+					"zombie_imp_leg_inner_upper",
+					"zombie_imp_leg_outer_lower",
+					"zombie_imp_leg_outer_upper",
+					"zombie_imp_pupil",
+					"zombie_imp_skull",
+					"zombie_imp_toe_inner",
+					"zombie_imp_toe_lower",
+					"zombie_imp_torso",
+					"zombie_imp_waist",
+					"zombie_imp_leg_outer_upper",
+					"_zombie_imp_head_top"
+				],
+				"LaunchDistance": 256,
+				"LaunchHeight": 250,
+				"LaunchAirTime": 0.750000,
+				"RiderSpawnOffset": {
+					"x": 60,
+					"y": 0,
+					"z": 50
+				},
+				"isCavalry": false,
+				"UseGetUpAnim": true,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 125,
+					"mWidth": 126,
+					"mX": -35,
+					"mY": 10
+				},
+				"Hitpoints": 1400,
+				"HypnoshroomEffectOffset": {
+					"x": 35,
+					"y": 20
+				},
+				"IsValidPinchTarget": false,
+				"MetallicBodyParts": true,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "BullRammingDamage"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "BullRunSpeed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"Size": "large",
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 1
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.190000,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 1000,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"VetRiderHelmDefault"
+			],
+			"objdata": {
+				"ArmorType": "CowboyHat",
+				"BaseHealth": 100.000000,
+				"ArmorFlags": [
+					"droppable",
+					"helm",
+					"passdamage"
+				],
+				"ArmorLayers": [
+					"helm"
+				],
+				"ArmorLayerHealth": [
+					1.000000
+				],
+				"ParticleLayerOverride": [
+					"helm"
+				]
+			}
+		},
