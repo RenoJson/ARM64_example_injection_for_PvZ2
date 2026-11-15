@@ -1,0 +1,121 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_pogo"
+            ],
+            "objdata": {
+                "TypeName": "modern_pogo",
+                "IntegerID": 560,
+                "ZombieClass": "ZombieModernPogo",
+                "Properties": "RTID(ZombieModernPogoDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombiePogoGroup"
+                ],
+                "AudioGroups": [
+                    "ZombiePogoAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ModernPogo",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_POGO",
+                "HomeWorld": "modern"
+            }
+        },
+		{
+			"aliases": [
+				"ZombieModernPogoDefault"
+			],
+			"objclass": "ZombieModernPogoProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"JumpingSpeed": 0.37,
+				"JumpingRect": {
+					"mHeight": 95,
+					"mWidth": 10,
+					"mX": -5,
+					"mY": 0
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ZombieArmorProps": [
+					"RTID(PogoDefault@ArmorTypes)"
+				],
+				"SoundOnIdle": "Play_Zomb_Modern_Pogo_Walk",
+				"Speed": 0.185,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"WavePointCost": 600,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "PogoDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Pogo",
+                "BaseHealth": 350.000000,
+                "ArmorFlags": [
+                    "droppable",
+                    "metallic"
+                ],
+                "ArmorLayers": [
+                    "pogo"
+                ],
+                "ArmorLayerHealth": [],
+                "DropSoundEvent": ""
+            }
+        },

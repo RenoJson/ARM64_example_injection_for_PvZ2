@@ -1,0 +1,287 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_ladder"
+            ],
+            "objdata": {
+                "TypeName": "modern_ladder",
+                "IntegerID": 605,
+                "ZombieClass": "ZombieModernLadder",
+                "Properties": "RTID(ZombieModernLadderDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieLadderGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_ModernLadder",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LADDER",
+                "HomeWorld": "modern"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "ladder"
+            ],
+            "objdata": {
+                "TypeName": "ladder",
+                "IntegerID": 605,
+                "ZombieClass": "ZombieLadder",
+                "Properties": "RTID(ZombieLadderDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieLadderGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Ladder",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LADDER",
+                "HomeWorld": "modern"
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernLadderDefault"
+			],
+			"objclass": "ZombieModernLadderProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"HitRectWhenHaveLadder": {
+					"mWidth": 42,
+					"mHeight": 100,
+					"mX": 0,
+					"mY": 0
+				},
+				"Hitpoints": 1000,
+				"LadderRect": {
+					"mX": -20,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 100
+				},
+				"# Place ladder when still have ladder instead eating them first #": 0,
+				"PlantsWhichPlaceLadderInsteadEating": {
+					"List": [
+						"wallnut",
+						"tallnut",
+						"primalwallnut",
+						"sweetpotato",
+						"holonut",
+						"chardguard",
+						"endurian",
+						"peanut",
+						"hollyknight",
+						"pumpkin",
+						"blockoli"
+					],
+					"ListType": "includelist"
+				},
+				"PierceableProjectiles": [
+					"RTID(CactusDefault@ProjectileTypes)",
+					"RTID(CactusPlantfood@ProjectileTypes)",
+					"RTID(ReincarnationWhitePuff@ProjectileTypes)",
+					"RTID(ReincarnationRedPuff@ProjectileTypes)",
+					"RTID(ReincarnationPinkPuff@ProjectileTypes)",
+					"RTID(PokraDefault@ProjectileTypes)",
+					"RTID(PokraPlantfood@ProjectileTypes)",
+					"RTID(ParsnipDefault@ProjectileTypes)",
+					"RTID(BloomerangDefault@ProjectileTypes)",
+					"RTID(ElectricPeaDefault@ProjectileTypes)",
+					"RTID(PoisonPeaPlantfoodDefault@ProjectileTypes)",
+					"RTID(PlantfoodGuacodileDefault@ProjectileTypes)"
+				],
+				" # Plants that in the blacklist must deal damage to the door first #": 0,
+				" # But the projectile created by these still can pass through the door if it's in PierceableProjectiles list or a lobbed/catapult projectile! #": 0,
+				"PlantBlacklist": [
+					"bonkchoy",
+					"endurian",
+					"wasabiwhip",
+					"parsnip",
+					"pokra",
+					"ultomato",
+					"tumbleweed",
+					"murkadamia",
+					"headbutter",
+					"rhubarian",
+					"hocus",
+					"blockoli"
+				],
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185,
+				"SpeedWhenHaveLadder": 0.6,
+				"WavePointCost": 700,
+				"Weight": 3500,
+				"ZombieArmorProps": [
+					"RTID(LadderDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLadderDefault"
+			],
+			"objclass": "ZombieLadderProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"IsValidPinchTarget": false,
+				"CanTriggerZombieWin": false,
+				"CanSurrender": true,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichCanTargetLadder": {
+					"List": [
+						"magnetshroom",
+						"cherry_bomb",
+						"bombegranate",
+						"jalapeno",
+						"grapeshot"
+					],
+					"ListType": "includelist"
+				},
+				"Hitpoints": 1800,
+				"UnclimbableZombies": {
+					"List": [
+						"ZombieZombossMech",
+						"ZombieGeneralBase",
+						"ZombieGargantuar",
+						"ZombiePirateBarrel",
+						"ZombieJourneyToTheWestGargantuar",
+						"ZombiePiano",
+						"ZombieCatapult",
+						"ZombieMech",
+						"ZombieBull",
+						"ZombieBeachSurfer",
+						"ZombieModernMiner",
+						"ZombieModernPogo",
+						"ZombieEliteBase",
+						"ZombieModernDolphinRider",
+						"ZombieGum",
+						"ZombieStatue",
+						"ZombieZcorpRacer",
+						"ZombieJourneyToTheWestVendor",
+						"ZombieMausoleumVendor"
+					],
+					"ListType": "includelist"
+				},
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Speed": 0.160000,
+				"SkipHeadDropState": true,
+				"WavePointCost": 1,
+				"Weight": 1,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"LadderDefault"
+			],
+			"objdata": {
+				"ArmorType": "Ladder",
+				"BaseHealth": 700.000000,
+				"ArmorFlags": [
+					"metallic",
+					"damageable",
+					"droppable"
+				],
+				"ArmorLayers": [
+					"ladder",
+					"ladder_damage1",
+					"ladder_damage2"
+				],
+				"ArmorLayerHealth": [
+					0.666000,
+					0.333000
+				],
+				"ImpactSoundEvent": "Play_impact_shieldhit"
+			}
+		},

@@ -1,0 +1,55 @@
+{
+	"version": 1,
+	"object": [
+         {
+            "#comment": "####### Tutorial Zombies #######",
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "tutorial"
+            ],
+            "objdata": {
+                "TypeName": "tutorial",
+                "IntegerID": 1,
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieTutorialDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieTutorialGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+                "HomeWorld": "modern",
+                "AnimRigProps": "RTID(TutorialBasicAnimRigDefault@PropertySheets)",
+                "IsBasicZombie": true
+            }
+        },
+		{
+			"objclass": "ZombieAnimRigTemplateConfig",
+			"aliases": [
+				"TutorialBasicAnimRigDefault"
+			],
+			"objdata": {
+				"LowerArmLayers": [
+					"zombie_arm_outer_lower",
+					"zombie_hand_outer_01",
+					"zombie_hand_outer_02",
+					"zombie_hand_outer_03"
+				],
+				"UpperArmLayers": [
+					"zombie_arm_outer_upper",
+					"zombie_arm_outer_upper_bone"
+				],
+				"HeadLayers": [
+					"zombie_skull",
+					"zombie_jaw"
+				],
+				"ParticleHeadSpriteName": "particle_head",
+				"ParticleArmSpriteName": "particle_arm",
+				"IdleAnimName": "idle",
+				"WalkAnimName": "walk",
+				"EatAnimName": "eat",
+				"DieAnimName": "die"
+			}
+		}
+	]
+}

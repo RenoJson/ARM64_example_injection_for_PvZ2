@@ -1,0 +1,119 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_bungee"
+            ],
+            "objdata": {
+                "TypeName": "modern_bungee",
+                "IntegerID": 602,
+                "ZombieClass": "ZombieModernBungee",
+                "Properties": "RTID(ZombieModernBungee@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieBungeeGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieBungeeAudio",
+                    "ZombieLostCityPilotAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_BUNGEE",
+                "AnimRigProps": "RTID(BungeeAnimRigDefault@PropertySheets)",
+                "HomeWorld": "modern",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_bungee_target"
+            ],
+            "objdata": {
+                "TypeName": "modern_bungee_target",
+                "IntegerID": 603,
+                "ZombieClass": "ZombieModernBungeeTarget",
+                "Properties": "RTID(ZombieSolarSageEnlightenedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieBungeeGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieBungeeAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_EFFECTS_ZOMBIE_BUNGEE_TARGET",
+                "HomeWorld": "modern",
+                "Placeable": true
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernBungee"
+			],
+			"objclass": "ZombieModernBungeeProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 10,
+					"mWidth": 30,
+					"mX": 20,
+					"mY": -50
+				},
+				"BungeeTargetExcludeList": [
+					"shadowpeashooter",
+					"olivepit",
+					"thymewarp",
+					"teleportatomine"
+				],
+				"CanTriggerZombieWin": false,
+				"CanBeFlicked": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 155,
+					"mWidth": 42,
+					"mX": 0,
+					"mY": 40
+				},
+				"Hitpoints": 450,
+				"IsValidPinchTarget": false,
+				"PlantLiftingWaitTime": 6,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"SkipHeadDropState": true,
+				"Speed": 1.500000,
+				"WavePointCost": 400,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
