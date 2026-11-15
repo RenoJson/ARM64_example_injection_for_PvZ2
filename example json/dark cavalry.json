@@ -1,0 +1,268 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "dark_cavalry"
+            ],
+            "objdata": {
+                "TypeName": "dark_cavalry",
+                "IntegerID": 158,
+                "ZombieClass": "ZombieDarkCavalry",
+                "Properties": "RTID(ZombieDarkCavalryDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieDarkCavalryAudio",
+                    "ZombieDarkRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Bull",
+                "HeadEffectOffsetAdjust": {
+                    "x": 75,
+                    "y": 15
+                },
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_DARK_CAVALRY",
+                "HomeWorld": "dark",
+                "HastyOnStart": false
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "dark_cavalry_rider"
+            ],
+            "objdata": {
+                "TypeName": "dark_cavalry_rider",
+                "IntegerID": 160,
+                "DisplayTypeName": "dark_armor3",
+                "ZombieClass": "ZombieZcorpRacerZombie",
+                "Properties": "RTID(ZombieDarkArmor3Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieDarkRiderAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ZcorpRacerZombie",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_DARK_CAVALRY",
+                "HeadEffectOffsetAdjust":{
+                    "x": 10,
+                    "y": 0
+                },
+                "HomeWorld": "dark",
+                "Placeable": true
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieDarkCavalryDefault"
+			],
+			"objclass": "ZombieDarkCavalryProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 106,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 55,
+					"mX": -45,
+					"mY": 10
+				},
+				"BuckRect": {
+					"mX": -95,
+					"mY": 10,
+					"mWidth": 40,
+					"mHeight": 125
+				},
+				"BullEnterSpeed": 0.300000,
+				"BullPawLocation": 810,
+				"BullRunSpeed": 1.500000,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 126,
+					"mHeight": 125
+				},
+				"Hitpoints": 1600,
+				"HypnoshroomEffectOffset": {
+					"x": 35,
+					"y": 20
+				},
+				"IsValidPinchTarget": false,
+				"UseGetUpAnim": false,
+				"isCavalry": true,
+				"LaunchDistance": 160,
+				"LaunchHeight": 150,
+				"LaunchAirTime": 0.5,
+				"LanceHitpoints": 900,
+				"LanceRect": {
+					"mX": -65,
+					"mY": 10,
+					"mWidth": 40,
+					"mHeight": 125
+				},
+				"LanceType": "joustsword",
+				"MetallicBodyParts": false,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"RiderType": "dark_cavalry_rider",
+				"RiderLayersToHide": [
+					"zombie_arm_inner_lower",
+					"zombie_arm_inner_upper",
+					"zombie_arm_outer_lower",
+					"zombie_hand_outer",
+					"zombie_jaw",
+					"zombie_armor_crown_states_rider",
+					"zombie_armor_crown_states",
+					"zombie_arms_outer_upper",
+					"zombie_imp_arms_outer_upper_rider",
+					"zombie_foot_inner_heel",
+					"zombie_foot_inner_toe_01",
+					"zombie_foot_outer_heel",
+					"zombie_foot_outer_toe",
+					"zombie_leg_inner_lower",
+					"zombie_leg_inner_upper",
+					"zombie_leg_outer_lower",
+					"zombie_leg_upper_outer",
+					"zombie_hand_inner_01",
+					"zombie_hand_outer_01",
+					"zombie_shoulder_armor",
+					"zombie_skull_rider",
+					"zombie_torso",
+					"zombie_waist",
+					"_zombie_hand_outer",
+					"qiang_01"
+				],
+				"RiderSpawnOffset": {
+					"x": 40,
+					"y": 16,
+					"z": 0
+				},
+				"RiderAttackRect": {
+					"mX": -50,
+					"mY": 10,
+					"mWidth": 70,
+					"mHeight": 125
+				},
+				"RiderAttackDamage": 1000,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "BullRunSpeed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"Stampede": false,
+				"Size": "large",
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 1
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.160000,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 1400,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"joustsword"
+			],
+			"objdata": {
+				"TypeName": "joustsword",
+				"GridItemClass": "GridItemSurfboard",
+				"ResourceGroups": [
+					"ZombieCavalryGroup",
+					"ZombieBeachSurferGroup"
+				],
+				"AudioGroups": [
+					"ZombieBeachSurferAudio"
+				],
+				"Properties": "RTID(CavalryGunDefault@GridItemProps)"
+			}
+		},
+		
+		{
+			"aliases": [
+				"CavalryGunDefault"
+			],
+			"objclass": "GridItemSurfboardProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"DamageStateCount": 5,
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"CanBeEatenByGravebusterAtLevel": 3,
+				"CanBeMowed": false,
+				"PopAnimRigClass": "SurfboardAnimRig",
+				"PopAnim": "POPANIM_EFFECTS_CAVALRYGUN",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		},

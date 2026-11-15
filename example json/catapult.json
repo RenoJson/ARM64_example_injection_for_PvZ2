@@ -1,0 +1,133 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_catapult"
+            ],
+            "objdata": {
+                "TypeName": "modern_catapult",
+                "IntegerID": 604,
+                "ZombieClass": "ZombieCatapult",
+                "Properties": "RTID(ZombieModernCatapultDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieCatapultGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieCatapultAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Catapult",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_CATAPULT",
+                "HomeWorld": "modern",
+                "HeadEffectOffsetAdjust":{
+                    "x": 0,
+                    "y": 20
+                },
+                "Placeable": true
+            }
+        },
+		{
+			"aliases": [
+				"ZombieModernCatapultDefault"
+			],
+			"objclass": "ZombieCatapultProps",
+			"objdata": {
+				"Ammo": 20,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 135
+				},
+				"AttackRect": {
+					"mX": -31,
+					"mY": 10,
+					"mWidth": 75,
+					"mHeight": 110
+				},
+				"IsValidPinchTarget": false,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 4000,
+				"FireInterval": 7,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": -31,
+					"mY": 10,
+					"mWidth": 75,
+					"mHeight": 110
+				},
+				"Hitpoints": 2500,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichBreakCatapultOnCollision": {
+					"List": [
+						"spikeweed",
+						"spikerock",
+						"cactus",
+						"iceweed"
+					],
+					"ListType": "includelist"
+				},
+				"Projectile": "RTID(CatapultProjectileDefault@ProjectileTypes)",
+				"ProjectileShotHeight": 500,
+				"ProjectileShotAirTime": 1.5,
+				"SkipHeadDropState": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowScaling": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 1.5,
+				"WavePointCost": 1200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},

@@ -1,0 +1,101 @@
+
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "modern_berserker"
+            ],
+            "objdata": {
+                "TypeName": "modern_berserker",
+                "IntegerID": 563,
+                "ZombieClass": "ZombieModernBerserker",
+                "Properties": "RTID(ZombieModernBerserkerDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieBerserkerAllstarGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieModernAllStarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ModernAllStar",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_BERSERKER_ALLSTAR",
+                "HomeWorld": "modern",
+                "Placeable": true
+            }
+        },
+		{
+			"aliases": [
+				"ZombieModernBerserkerDefault"
+			],
+			"objclass": "ZombieModernBerserkerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 123
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 10,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ChargeCooldown": 6,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 42,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 2000,
+				"RunningSpeedScale": 2,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"SmashDamage": 1500,
+				"Speed": 0.100000,
+				"WavePointCost": 1500,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},

@@ -1,0 +1,3616 @@
+
+        {
+            "#comment": "####### Mausoleum Zombies #######",
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_vendor"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_vendor",
+                "IntegerID": 494,
+                "ZombieClass": "ZombieMausoleumVendor",
+                "Properties": "RTID(ZombieMausoleumVendorDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumVendorGroup",
+                    "ZombieMausoleumPiggyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumPiggyAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Vendor",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_VENDOR",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_piggy"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_piggy",
+                "IntegerID": 495,
+                "ZombieClass": "ZombieMausoleumPiggy",
+                "Properties": "RTID(ZombieMausoleumPiggyDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumPiggyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumPiggyAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_PIGGY",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_cavalry"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_cavalry",
+                "IntegerID": 570,
+                "ZombieClass": "ZombieMausoleumCavalry",
+                "Properties": "RTID(ZombieMausoleumCavalryDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumCavalryGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumCavalryAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_CAVALRY",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_segment"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_segment",
+                "IntegerID": 571,
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieMausoleumDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_SEGMENT",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum",
+                "IntegerID": 571,
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor1"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor1",
+                "IntegerID": 572,
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor2"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor2",
+                "IntegerID": 573,
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor4"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor4",
+                "IntegerID": 586,
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor4Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_cursed",
+                "IntegerID": 571,
+                "DisplayTypeName": "mausoleum",
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumCursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor1_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor1_cursed",
+                "IntegerID": 572,
+                "DisplayTypeName": "mausoleum_armor1",
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor1CursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor2_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor2_cursed",
+                "IntegerID": 573,
+                "DisplayTypeName": "mausoleum_armor2",
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor2CursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_armor4_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_armor4_cursed",
+                "IntegerID": 586,
+                "DisplayTypeName": "mausoleum_armor4",
+                "ZombieClass": "ZombieMausoleumBasic",
+                "Properties": "RTID(ZombieMausoleumArmor4CursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumBasic",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_spirit"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_spirit",
+                "IntegerID": 587,
+                "ZombieClass": "ZombieMausoleumSpirit",
+                "Properties": "RTID(ZombieMausoleumSpiritDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC_GHOST",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_spirit_armor1"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_spirit_armor1",
+                "IntegerID": 588,
+                "ZombieClass": "ZombieMausoleumSpirit",
+                "Properties": "RTID(ZombieMausoleumSpiritArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC_GHOST",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_spirit_armor2"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_spirit_armor2",
+                "IntegerID": 589,
+                "ZombieClass": "ZombieMausoleumSpirit",
+                "Properties": "RTID(ZombieMausoleumSpiritArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC_GHOST",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_spirit_armor4"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_spirit_armor4",
+                "IntegerID": 590,
+                "ZombieClass": "ZombieMausoleumSpirit",
+                "Properties": "RTID(ZombieMausoleumSpiritArmor4Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFristkingGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_BASIC_GHOST",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_flag"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_flag",
+                "IntegerID": 574,
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieMausoleumFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_FLAG",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_almanac"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_almanac",
+                "IntegerID": 575,
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_CamelAlmanac",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "AlmanacBackdropName": "mausoleum",
+                "Placeable": false,
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_onehump"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_onehump",
+                "IntegerID": 576,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldOnehumpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_pair"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_pair",
+                "IntegerID": 576,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldPairDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_twohump"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_twohump",
+                "IntegerID": 577,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldTwohumpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_manyhump"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_manyhump",
+                "IntegerID": 578,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldManyhumpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_segment"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_segment",
+                "IntegerID": 579,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldSegmentDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "Placeable": false,
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "comment": "segment type that use in any level instead using for spawn with any mausoleum shield zombie",
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_shield_solo"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_shield_solo",
+                "IntegerID": 579,
+                "DisplayTypeName": "mausoleum_shield_almanac",
+                "ZombieClass": "ZombieCamel",
+                "Properties": "RTID(ZombieMausoleumShieldSoloDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinShieldGroup",
+                    "ZombieMausoleumGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieEgyptCamelAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Camel",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_SHIELD",
+                "Placeable": false,
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_assasin"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_assasin",
+                "IntegerID": 580,
+                "ZombieClass": "ZombieMausoleumAssasin",
+                "Properties": "RTID(ZombieMausoleumAssasinDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinJingkeGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieQinJingkeAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumAssasin",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_JINGKE",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_assasin_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_assasin_cursed",
+                "IntegerID": 580,
+                "DisplayTypeName": "mausoleum_assasin",
+                "ZombieClass": "ZombieMausoleumAssasin",
+                "Properties": "RTID(ZombieMausoleumAssasinCursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieQinJingkeGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieQinJingkeAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumAssasin",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_JINGKE",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_gargantuar"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_gargantuar",
+                "IntegerID": 582,
+                "ZombieClass": "ZombieMausoleumGargantuar",
+                "Properties": "RTID(ZombieMausoleumGargantuar@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumGargantuarGroup",
+                    "ZombieMausoleumImpGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumGargantuar",
+                "HeadEffectOffsetAdjust": {
+                    "x": 10,
+                    "y": 85
+                },
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_GARGANTUAR",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_gargantuar_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_gargantuar_cursed",
+                "IntegerID": 582,
+                "DisplayTypeName": "mausoleum_gargantuar",
+                "ZombieClass": "ZombieMausoleumGargantuar",
+                "Properties": "RTID(ZombieMausoleumGargantuarCursed@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumGargantuarGroup",
+                    "ZombieMausoleumImpGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumGargantuar",
+                "HeadEffectOffsetAdjust": {
+                    "x": 10,
+                    "y": 85
+                },
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_GARGANTUAR",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_imp"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_imp",
+                "IntegerID": 583,
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_IMP",
+                "HeadEffectOffsetAdjust": {
+                    "x": 10,
+                    "y": -10
+                },
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_archer"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_archer",
+                "IntegerID": 584,
+                "ZombieClass": "ZombieMausoleumArcher",
+                "Properties": "RTID(ZombieMausoleumArcherDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumArcherGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumArcherAudio",
+                    "ZombieSpiritAudio",
+                    "PlantCactusAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumArcher",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_ARCHER",
+                "AlmanacBackdropName": "mausoleum",
+                "Placeable": false,
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_archer_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_archer_cursed",
+                "IntegerID": 584,
+                "DisplayTypeName": "mausoleum_archer",
+                "ZombieClass": "ZombieMausoleumArcher",
+                "Properties": "RTID(ZombieMausoleumArcherCursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumArcherGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumArcherAudio",
+                    "ZombieSpiritAudio",
+                    "PlantCactusAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumArcher",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_ARCHER",
+                "AlmanacBackdropName": "mausoleum",
+                "Placeable": false,
+                "HomeWorld": "rift2"
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_drunkard"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_drunkard",
+                "IntegerID": 586,
+                "ZombieClass": "ZombieMausoleumDrunkard",
+                "Properties": "RTID(ZombieMausoleumDrunkardDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumDrunkGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumDrunkAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumDrunkard",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_DRUNK",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_drunkard_cursed"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_drunkard_cursed",
+                "IntegerID": 586,
+                "DisplayTypeName": "mausoleum_drunkard",
+                "ZombieClass": "ZombieMausoleumDrunkard",
+                "Properties": "RTID(ZombieMausoleumDrunkardCursedDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMausoleumDrunkGroup",
+                    "ZombieSpiritGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieMausoleumDrunkAudio",
+                    "ZombieSpiritAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MausoleumDrunkard",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAUSOLEUM_DRUNK",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "mausoleum_mystic_formation"
+            ],
+            "objdata": {
+                "TypeName": "mausoleum_mystic_formation",
+                "IntegerID": 595,
+                "ZombieClass": "ZombieMysticFormation",
+                "Properties": "RTID(ZombieMysticFormationDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMysticFormationGroup",
+                    "ZombieImpPorterGroup",
+                    "Enchantment"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_MysticFormation",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FRISTKING_TOKEN",
+                "AlmanacBackdropName": "mausoleum",
+                "HomeWorld": "rift2"
+            }
+        },
+		
+		{
+			"############ Mausoleum Type BEGIN ############": 0
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumDefault"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor1Default"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor1",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor2Default"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor2",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor4Default"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor4",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BrickDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumCursedDefault"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor1CursedDefault"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor1",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor2CursedDefault"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor2",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArmor4CursedDefault"
+			],
+			"objclass": "ZombieMausoleumBasicProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"SpiritTypeName": "mausoleum_spirit_armor4",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BrickDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumSpiritDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					}
+				],
+				"EatDPS": 100,
+				"FireDamageMultiplier": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"SkipHeadDropState": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.120000,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumSpiritArmor1Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					}
+				],
+				"EatDPS": 100,
+				"FireDamageMultiplier": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"SkipHeadDropState": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.120000,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumSpiritArmor2Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					}
+				],
+				"EatDPS": 100,
+				"FireDamageMultiplier": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"SkipHeadDropState": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.120000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumSpiritArmor4Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					}
+				],
+				"EatDPS": 100,
+				"FireDamageMultiplier": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"SkipHeadDropState": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.120000,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumFlagDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 100,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"FollowerSegmentTypeOrder": [
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment"
+				],
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SegmentCount": 3,
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldOnehumpDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"FollowerSegmentTypeOrder": [
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment"
+				],
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SegmentCount": 2,
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldPairDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"FollowerSegmentTypeOrder": [
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment"
+				],
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SegmentCount": 1,
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldTwohumpDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"FollowerSegmentTypeOrder": [
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment"
+				],
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SegmentCount": 3,
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldManyhumpDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"FollowerSegmentTypeOrder": [
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment",
+					"mausoleum_shield_segment"
+				],
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SegmentCount": 5,
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldSegmentDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"HeadArmorType": "QinShieldDefault",
+				"MiddleArmorType": "QinShieldDefault",
+				"TailArmorType": "QinShieldDefault",
+				"ZombieTypeName": "mausoleum_segment",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumShieldSoloDefault"
+			],
+			"objclass": "ZombieCamelProps",
+			"objdata": {
+				"# Camel pieces all walk at the same speed": 0,
+				"# Camel-specific values ": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CamelSegmentOffset": 65,
+				"CamelSegmentTooCloseBuffer": 15,
+				"CamelSegmentTooFarBuffer": 20,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DropArmOnSignDrop": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 110,
+					"mWidth": 37,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"OnlyHeadZombieEats": false,
+				"PropagateSignDestruction": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieTypeName": "mausoleum_segment",
+				"ChooseYourSeedSegmentTypeName": "mausoleum_shield_segment",
+				"ZombieArmorProps": [
+					"RTID(QinShieldDefault@ArmorTypes)"
+				],
+				"SoundOnEat": "Play_CamelPanel_AttackPlant",
+				"SpawnManyCamelSegmentAtPosition": 780,
+				"Speed": 0.120000,
+				"SpeedVariance": 0,
+				"StreetCriticalSize": {
+					"x": 5,
+					"y": 1
+				},
+				"StreetSize": {
+					"x": 5,
+					"y": 2
+				},
+				"SurprisedTime": 3,
+				"SwitchToHeadCamelSign": true,
+				"WalkCycleOffset": -10,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArcherDefault"
+			],
+			"objclass": "ZombieMausoleumArcherProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"FireInterval": 4,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 700,
+				"Projectile": "RTID(ArcherProjectileDefault@ProjectileTypes)",
+				"ProjectileOffset": {
+					"x": 20,
+					"y": 5,
+					"z": -35
+				},
+				"SpiritTypeName": "mausoleum_archer_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 500,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumArcherCursedDefault"
+			],
+			"objclass": "ZombieMausoleumArcherProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"FireInterval": 4,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 700,
+				"Projectile": "RTID(ArcherProjectileDefault@ProjectileTypes)",
+				"ProjectileOffset": {
+					"x": 20,
+					"y": 5,
+					"z": -35
+				},
+				"SpiritTypeName": "mausoleum_archer_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 500,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumAssasinDefault"
+			],
+			"objclass": "ZombieMausoleumAssasinProps",
+			"objdata": {
+				"AssasinateDamage": 300,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 500,
+				"SpiritTypeName": "mausoleum_assasin_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 700,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(DaggerDefault@ArmorTypes)",
+					"RTID(ScrollDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumAssasinCursedDefault"
+			],
+			"objclass": "ZombieMausoleumAssasinProps",
+			"objdata": {
+				"AssasinateDamage": 300,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 500,
+				"SpiritTypeName": "mausoleum_assasin_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 700,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(DaggerDefault@ArmorTypes)",
+					"RTID(ScrollDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumDrunkardDefault"
+			],
+			"objclass": "ZombieMausoleumDrunkardProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionLifetime": 7.5,
+				"CursedAtStart": false,
+				"DrunkInterval": 7.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 1200,
+				"PukeOffsetGridX": -3,
+				"PukeWidth": 3,
+				"SpiritTypeName": "mausoleum_drunkard_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.160000,
+				"WavePointCost": 600,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumDrunkardCursedDefault"
+			],
+			"objclass": "ZombieMausoleumDrunkardProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"ConditionLifetime": 7.5,
+				"CursedAtStart": true,
+				"DrunkInterval": 7.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 1200,
+				"PukeOffsetGridX": -3,
+				"PukeWidth": 3,
+				"SpiritTypeName": "mausoleum_drunkard_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.160000,
+				"WavePointCost": 600,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMysticFormationDefault"
+			],
+			"objclass": "ZombieMysticFormationProps",
+			"objdata": {
+				"# TombRaiser specific properties ": 0,
+				"Actions": [
+					{
+						"Projectile": "RTID(RitualTokenDefault@ProjectileTypes)",
+						"ProjectileLayerName": "_token_green",
+						"Weight": 65
+					},
+					{
+						"Projectile": "RTID(SummonTokenDefault@ProjectileTypes)",
+						"ProjectileLayerName": "_token_red",
+						"Weight": 35
+					}
+				],
+				"Ammo": 5,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 750,
+				"NumberOfTokensToSpawn": 1,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.16,
+				"TimeBetweenCasts": 1,
+				"TimeBetweenRaisings": 12,
+				"WavePointCost": 800,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumGargantuar"
+			],
+			"objclass": "ZombieMausoleumGargantuarProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.800000,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": false,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HeadDropFraction": 0.1,
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.500000,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 5000,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 250,
+				"ImpFlightTime": 1.500000,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 2,
+				"ImpType": "mausoleum_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"SpiritTypeName": "mausoleum_gargantuar_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Size": "large",
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"Speed": 0.160000,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumGargantuarCursed"
+			],
+			"objclass": "ZombieMausoleumGargantuarProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.800000,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CursedAtStart": true,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HeadDropFraction": -1,
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.500000,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 5000,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 2,
+				"ImpType": "mausoleum_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"SpiritTypeName": "mausoleum_gargantuar_spirit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Size": "large",
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"Speed": 0.160000,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumVendorDefault"
+			],
+			"objclass": "ZombieMausoleumVendorProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mX": -34,
+					"mY": 10,
+					"mWidth": 70,
+					"mHeight": 95
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 4000,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": -34,
+					"mY": 10,
+					"mWidth": 70,
+					"mHeight": 95
+				},
+				"Hitpoints": 1600,
+				"NumberOfPigToSpawnWhenDie": 4,
+				"PigType": "mausoleum_piggy",
+				"PigSpawnOffset": {
+					"x": 110,
+					"y": 0,
+					"z": 5
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.16,
+				"SetPigInterval": 6,
+				"TunnelSpeed": 0.22,
+				"WavePointCost": 600,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumPiggyDefault"
+			],
+			"objclass": "ZombieMausoleumPiggyProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mX": -15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 40
+				},
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 60
+				},
+				"Hitpoints": 60,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 43
+				},
+				"IsValidPinchTarget": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"ShadowScaling": {
+					"x": 0.500000,
+					"y": 0.500000
+				},
+				"SkipHeadDropState": true,
+				"Size": "chicken",
+				"Speed": 1,
+				"TunnelSpeed": 1.5,
+				"WavePointCost": 10,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness0"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMausoleumCavalryDefault"
+			],
+			"objclass": "ZombieMausoleumCavalryProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mX": -15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 40
+				},
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 60
+				},
+				"Hitpoints": 1000,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 43
+				},
+				"IsValidPinchTarget": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.2,
+				"TunnelSpeed": 0.4,
+				"WavePointCost": 400,
+				"Weight": 6000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness0"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "ScrollDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Scroll",
+                "BaseHealth": 500.000000,
+                "ArmorFlags": [
+                    "damageable"
+                ],
+                "ArmorLayers": [
+                    "juanju02",
+                    "juanju02_poshun"
+                ],
+                "ArmorLayerHealth": [
+                    0.5
+                ],
+                "DropSoundEvent": ""
+            }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "DaggerDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Dao",
+                "BaseHealth": 675.000000,
+                "ArmorFlags": [
+                    "passdamage",
+                    "droppable",
+                    "metallic"
+                ],
+                "ArmorLayers": [
+                    "dao"
+                ],
+				"ArmorLayerHealth": [
+					1.000000
+				],
+                "DropSoundEvent": ""
+            }
+        },
+		{
+			"############ Mausoleum Type END ############": 0
+		},

@@ -1,0 +1,467 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_disco"
+            ],
+            "objdata": {
+                "TypeName": "modern_disco",
+                "IntegerID": 600,
+                "ZombieClass": "ZombieModernDancer",
+                "Properties": "RTID(ZombieModernDiscoDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieModernDiscoGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieDiscoAudioGroup"
+                ],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_DISCO",
+                "HomeWorld": "modern",
+                "AnimRigProps": "RTID(DiscoAnimRigDefault@PropertySheets)",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_backup_dancer"
+            ],
+            "objdata": {
+                "TypeName": "modern_backup_dancer",
+                "IntegerID": 601,
+                "ZombieClass": "ZombieModernDancer",
+                "Properties": "RTID(ZombieModernBackupDancerDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieModernDiscoGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_BACKUP_DANCER",
+                "HomeWorld": "modern",
+                "HeadEffectOffsetAdjust":{
+                    "x": -15,
+                    "y": 10
+                },
+                "AnimRigProps": "RTID(BackupAnimRigDefault@PropertySheets)",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_backup_dancer_armor1"
+            ],
+            "objdata": {
+                "TypeName": "modern_backup_dancer_armor1",
+                "IntegerID": 601,
+                "ZombieClass": "ZombieModernDancer",
+                "Properties": "RTID(ZombieModernBackupDancerArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieModernDiscoGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_BACKUP_DANCER",
+                "HomeWorld": "modern",
+                "HeadEffectOffsetAdjust":{
+                    "x": -15,
+                    "y": 10
+                },
+                "AnimRigProps": "RTID(BackupAnimRigDefault@PropertySheets)",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_backup_dancer_armor2"
+            ],
+            "objdata": {
+                "TypeName": "modern_backup_dancer_armor2",
+                "IntegerID": 601,
+                "ZombieClass": "ZombieModernDancer",
+                "Properties": "RTID(ZombieModernBackupDancerArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieModernDiscoGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_BasicTemplate",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_BACKUP_DANCER",
+                "HomeWorld": "modern",
+                "HeadEffectOffsetAdjust":{
+                    "x": -15,
+                    "y": 10
+                },
+                "AnimRigProps": "RTID(BackupAnimRigDefault@PropertySheets)",
+                "Placeable": true
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernBackupDancerDefault"
+			],
+			"objclass": "ZombieModernDancerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ActionInterval": 3,
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DanceCount": 3,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"IsMainDancer": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Speed": 0.190000,
+				"WavePointCost": 1,
+				"Weight": 1,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieModernBackupDancerArmor1Default"
+			],
+			"objclass": "ZombieModernDancerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"ActionInterval": 3,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DanceCount": 3,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"IsMainDancer": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Speed": 0.190000,
+				"WavePointCost": 1,
+				"Weight": 1,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieModernBackupDancerArmor2Default"
+			],
+			"objclass": "ZombieModernDancerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"ActionInterval": 3,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DanceCount": 3,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"IsMainDancer": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Speed": 0.190000,
+				"WavePointCost": 1,
+				"Weight": 1,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieModernDiscoDefault"
+			],
+			"objclass": "ZombieModernDancerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"ActionInterval": 3,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DanceCount": 3,
+				"DancerSpawnList": [
+					{
+						"Weight": 50,
+						"ZombieTypeName": "modern_backup_dancer"
+					},
+					{
+						"Weight": 30,
+						"ZombieTypeName": "modern_backup_dancer_armor1"
+					},
+					{
+						"Weight": 20,
+						"ZombieTypeName": "modern_backup_dancer_armor2"
+					}
+				],
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 1600,
+				"IsMainDancer": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"Speed": 0.190000,
+				"WavePointCost": 600,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		
+		{
+			"objclass": "ZombieAnimRigTemplateConfig",
+			"aliases": [
+				"DiscoAnimRigDefault"
+			],
+			"objdata": {
+				"LowerArmLayers": [
+					"zombie_disco_arm_outer_lower",
+					"zombie_disco_hand_outer_01",
+					"zombie_disco_hand_outer_02"
+				],
+				"UpperArmLayers": [
+					"zombie_disco_arm_outer_upper",
+					"zombie_disco_arm_outer_upper_bone"
+				],
+				"HeadLayers": [
+					"zombie_disco_skull",
+					"zombie_disco_jaw",
+					"zombie_disco_glass",
+					"zombie_disco_hair_upper",
+					"zombie_disco_hair_lower",
+					"zombie_disco_hair01"
+				],
+				"ParticleHeadSpriteName": "particle_head",
+				"ParticleArmSpriteName": "particle_arm",
+				"IdleAnimName": "entry",
+				"WalkAnimName": "walk",
+				"EatAnimName": "eat",
+				"DieAnimName": "die"
+			}
+		},
+		{
+			"objclass": "ZombieAnimRigTemplateConfig",
+			"aliases": [
+				"BackupAnimRigDefault"
+			],
+			"objdata": {
+				"LowerArmLayers": [
+					"zombie_backupdancer_arm_outer_lower",
+					"zombie_backupdancer_hand_outer_01"
+				],
+				"UpperArmLayers": [
+					"zombie_backupdancer_arm_outer_upper",
+					"zombie_backupdancer_outer_upper_bone"
+				],
+				"HeadLayers": [
+					"zombie_backupdancer_skull",
+					"zombie_backupdancer_jaw",
+					"zombie_backupdancer_mustache"
+				],
+				"ParticleHeadSpriteName": "particle_head",
+				"ParticleArmSpriteName": "particle_arm",
+				"IdleAnimName": "walk",
+				"WalkAnimName": "walk",
+				"EatAnimName": "eat",
+				"DieAnimName": "die"
+			}
+		},

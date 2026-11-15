@@ -1,0 +1,183 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_screendoor"
+            ],
+            "objdata": {
+                "TypeName": "modern_screendoor",
+                "DisplayTypeName": "modern_screendoor_almanac",
+                "IntegerID": 561,
+                "ZombieClass": "ZombieModernScreenDoor",
+                "Properties": "RTID(ZombieModernScreenDoorDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieScreenDoorGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_ModernScreenDoor",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_SCREEN_DOOR",
+                "HomeWorld": "modern",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_screendoor_almanac"
+            ],
+            "objdata": {
+                "TypeName": "modern_screendoor_almanac",
+                "IntegerID": 562,
+                "ZombieClass": "ZombieModernScreenDoor",
+                "Properties": "RTID(ZombieModernScreenDoorDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieScreenDoorGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_ModernScreenDoorAlmanac",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_SCREEN_DOOR",
+                "HomeWorld": "modern",
+                "IsBasicZombie": true
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernScreenDoorDefault"
+			],
+			"objclass": "ZombieModernScreenDoorProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"AttackRectWhenHaveDoor": {
+					"mWidth": 20,
+					"mHeight": 100,
+					"mX": -20,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"HitRectWhenHaveDoor": {
+					"mWidth": 42,
+					"mHeight": 100,
+					"mX": 0,
+					"mY": 0
+				},
+				"Hitpoints": 270,
+				"PierceableProjectiles": [
+					"RTID(CactusDefault@ProjectileTypes)",
+					"RTID(CactusPlantfood@ProjectileTypes)",
+					"RTID(ReincarnationWhitePuff@ProjectileTypes)",
+					"RTID(ReincarnationRedPuff@ProjectileTypes)",
+					"RTID(ReincarnationPinkPuff@ProjectileTypes)",
+					"RTID(PokraDefault@ProjectileTypes)",
+					"RTID(PokraPlantfood@ProjectileTypes)",
+					"RTID(ParsnipDefault@ProjectileTypes)",
+					"RTID(BloomerangDefault@ProjectileTypes)",
+					"RTID(ElectricPeaDefault@ProjectileTypes)",
+					"RTID(PoisonPeaPlantfoodDefault@ProjectileTypes)",
+					"RTID(PlantfoodGuacodileDefault@ProjectileTypes)"
+				],
+				" # Plants that in the blacklist must deal damage to the door first #": 0,
+				" # But the projectile created by these still can pass through the door if it's in PierceableProjectiles list or a lobbed/catapult projectile! #": 0,
+				"PlantBlacklist": [
+					"bonkchoy",
+					"endurian",
+					"wasabiwhip",
+					"parsnip",
+					"pokra",
+					"ultomato",
+					"tumbleweed",
+					"murkadamia",
+					"headbutter",
+					"rhubarian",
+					"hocus",
+					"blockoli"
+				],
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Speed": 0.185000,
+				"WavePointCost": 250,
+				"Weight": 2500,
+				"ZombieArmorProps": [
+					"RTID(ScreenDoorDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"ScreenDoorDefault"
+			],
+			"objdata": {
+				"ArmorType": "ScreenDoor",
+				"BaseHealth": 1100.000000,
+				"ArmorFlags": [
+					"metallic",
+					"damageable",
+					"droppable"
+				],
+				"ArmorLayers": [
+					"screen_door",
+					"screen_door_damage01",
+					"screen_door_damage02"
+				],
+				"ArmorLayerHealth": [
+					0.666000,
+					0.333000
+				],
+				"ImpactSoundEvent": "Play_impact_shieldhit"
+			}
+		},

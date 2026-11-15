@@ -1,0 +1,279 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_miner"
+            ],
+            "objdata": {
+                "TypeName": "modern_miner",
+                "IntegerID": 556,
+                "ZombieClass": "ZombieModernMiner",
+                "Properties": "RTID(ZombieModernMinerDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieModernMinerGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_ModernMiner",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_MINER",
+                "HomeWorld": "modern"
+            }
+        },
+		
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "tudigong"
+            ],
+            "objdata": {
+                "TypeName": "tudigong",
+                "IntegerID": 489,
+                "ZombieClass": "ZombieModernMiner",
+                "Properties": "RTID(ZombieTudigongDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieJourneyToTheWestMinerGroup",
+                    "ScorchedEarthGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieIceAgeTroglobiteAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ModernMiner",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_JOURNEY_TO_THE_WEST_MINER",
+                "HomeWorld": "western"
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernMinerDefault"
+			],
+			"objclass": "ZombieModernMinerProps",
+			"objdata": {
+				"ArmorTypeToUseForDigging": "Pickaxe",
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mX": -10,
+					"mY": 10,
+					"mWidth": 20,
+					"mHeight": 95
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"DiggingSpeed": 25,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 95
+				},
+				"Hitpoints": 350,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"Smashable": false,
+				"Speed": 0.185,
+				"WavePointCost": 300,
+				"Weight": 2000,
+				"ZombieArmorProps": [
+					"RTID(PickaxeDefault@ArmorTypes)",
+					"RTID(MinerHatDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		
+		{
+			"aliases": [
+				"ZombieTudigongDefault"
+			],
+			"objclass": "ZombieModernMinerProps",
+			"objdata": {
+				"ArmorTypeToUseForDigging": "Stick",
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mX": -10,
+					"mY": 10,
+					"mWidth": 20,
+					"mHeight": 95
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CraterLifetime": 15,
+				"DiggingSpeed": 25,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 95
+				},
+				"Hitpoints": 490,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.400000
+				},
+				"ZombieArmorProps": [
+					"RTID(StickDefault@ArmorTypes)"
+				],
+				"Smashable": true,
+				"SmashDamage": 1500,
+				"SmashDuration": 3,
+				"SoundOnSmash": "Play_Zomb_Future_Gargantuar_Mvmt_Attack",
+				"Speed": 0.185000,
+				"WavePointCost": 1000,
+				"Weight": 4500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"MinerHatDefault"
+			],
+			"objdata": {
+				"ArmorType": "Cone",
+				"BaseHealth": 220.000000,
+				"ArmorFlags": [
+					"damageable",
+					"droppable",
+					"helm"
+				],
+				"ArmorLayers": [
+					"zombie_armor_cone_norm",
+					"zombie_armor_cone_damage_01",
+					"zombie_armor_cone_damage_02"
+				],
+				"ArmorLayerHealth": [
+					0.666000,
+					0.333000
+				],
+				"ImpactSoundEvent": "Play_impact_plastic"
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"StickDefault"
+			],
+			"objdata": {
+				"ArmorType": "Stick",
+				"BaseHealth": 1.000000,
+				"ArmorFlags": [
+					"invincible",
+					"droppable"
+				],
+				"ArmorLayers": [
+					"zombie_stick"
+				],
+				"ArmorLayerHealth": [],
+				"ImpactSoundEvent": "",
+				"DropSoundEvent": ""
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"PickaxeDefault"
+			],
+			"objdata": {
+				"ArmorType": "Pickaxe",
+				"BaseHealth": 1.000000,
+				"ArmorFlags": [
+					"invincible",
+                    "droppable",
+                    "metallic"
+				],
+				"ArmorLayers": [
+					"zombie_pickaxe"
+				],
+				"ArmorLayerHealth": [],
+				"ImpactSoundEvent": "",
+				"DropSoundEvent": ""
+			}
+		},

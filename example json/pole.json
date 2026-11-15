@@ -1,0 +1,177 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_polevaulter"
+            ],
+            "objdata": {
+                "TypeName": "modern_polevaulter",
+                "IntegerID": 285,
+                "ZombieClass": "ZombieModernPoleVaulter",
+                "Properties": "RTID(ZombieModernPoleVaulterDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombiePoleVaultingGroup",
+                    "ZombiePoleVaultingEffects"
+                ],
+                "AudioGroups": [
+                    "ZombiePoleVaultingAudio",
+                    "ZombiePogoAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ModernPoleVaulter",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_POLE_VAULTING",
+                "HomeWorld": "modern"
+            }
+        },
+		{
+			"aliases": [
+				"ZombieModernPoleVaulterDefault"
+			],
+			"objclass": "ZombieModernPoleVaulterProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"Feastivus": false,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 700,
+				"JumpingRect": {
+					"mHeight": 95,
+					"mWidth": 40,
+					"mX": -30,
+					"mY": 0
+				},
+				"PoleProjectile": "RTID(PoleVaultingProjectileDefault@ProjectileTypes)",
+				"RunningSpeed": 0.37,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"Throw": true,
+				"Speed": 0.185,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"WavePointCost": 400,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		      
+		{
+            "objclass": "ProjectilePropertySheet",
+            "aliases": [
+                "PoleVaultingProjectileDefault"
+            ],
+            "objdata": {
+				"RotateToMatchVelocity": true,
+                "BaseDamage": 1000,
+                "CollisionFlags": [
+                    "griditems",
+                    "normal_plants",
+                    "tall_plants",
+                    "low_plants",
+                    "plants",
+                    "ground"
+                ],
+                "DamageFlags": [
+                    "lobbed"
+                ],
+                "InitialVelocity": [
+                    {
+                        "Min": 290,
+                        "Max": 310
+                    },
+                    {
+                        "Min": -10,
+                        "Max": 10
+                    },
+                    {
+                        "Min": 500,
+                        "Max": 700
+                    }
+                ],
+                "InitialAcceleration": [
+                    {
+                        "Min": 0,
+                        "Max": 0
+                    },
+                    {
+                        "Min": 0,
+                        "Max": 0
+                    },
+                    {
+                        "Min": -10,
+                        "Max": -10
+                    }
+                ],
+                "InitialScale": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "AttachedPAM": "POPANIM_EFFECTS_POLE_VAULTING_EFFECT",
+                "AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+                "AttachedPAMOffset": {
+                    "x": -100,
+                    "y": -97
+                },
+                "CollisionRect": {
+                    "mX": -30,
+                    "mY": -15,
+                    "mWidth": 60,
+                    "mHeight": 30
+                },
+                "ImpactSoundEvent": "Play_Pumpkin_House_Throw_Head_Hit",
+                "ImpactShowsAtZombieFeet": true,
+                "ImpactPAM": "POPANIM_EFFECTS_POLE_VAULTING_EFFECT",
+                "ImpactPAMAnimationToPlay":[
+					"hit"
+				]
+            }
+        },

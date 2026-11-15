@@ -1,0 +1,141 @@
+
+        {
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "modern_jack_in_the_box"
+            ],
+            "objdata": {
+                "TypeName": "modern_jack_in_the_box",
+                "IntegerID": 555,
+                "ZombieClass": "ZombieModernJackInTheBox",
+                "Properties": "RTID(ZombieModernJackInTheBoxDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieNeuropathyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieJackInTheBoxAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ModernJackInTheBox",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_NEUROPATHY",
+                "HomeWorld": "modern"
+            }
+        },
+		
+		{
+			"aliases": [
+				"ZombieModernJackInTheBoxDefault"
+			],
+			"objclass": "ZombieModernJackInTheBoxProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 135
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"BoxExplodeTimerProps": {
+					"HighTimer": {
+						"Min": 4.5,
+						"Max": 7.75
+					},
+					"LowTimer": {
+						"Min": 13.25,
+						"Max": 23
+					},
+					"HighTimerChance": 5,
+					"LowTimerChance": 95
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"CanBreakVase": false,
+				"CanRevealVase": false,
+				"VaseRevealDuration": 20,
+				"EatDPS": 100,
+				"ExplosionDamage": 1500,
+				"ExplosionRect": {
+					"mX": -1,
+					"mY": -1,
+					"mWidth": 3,
+					"mHeight": 3
+				},
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 700,
+				"HaveBoxSpeedScale": 2.5,
+				"MinXPosToExplode": 650,
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"Speed": 0.24,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.200000
+				},
+				"WavePointCost": 1000,
+				"Weight": 2500,
+				"ZombieArmorProps": [
+					"RTID(JackInTheBoxDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"JackInTheBoxDefault"
+			],
+			"objdata": {
+				"ArmorType": "JackInTheBox",
+				"BaseHealth": 1.000000,
+				"ArmorFlags": [
+					"invincible",
+                    "droppable",
+                    "metallic"
+				],
+				"ArmorLayers": [
+					"box"
+				],
+				"ArmorLayerHealth": [],
+				"ImpactSoundEvent": "",
+				"DropSoundEvent": ""
+			}
+		},
