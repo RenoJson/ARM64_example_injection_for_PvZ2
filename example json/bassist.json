@@ -1,0 +1,216 @@
+
+        {
+			"#comment": "use parachute rain module to make this work properly",
+            "objclass": "ZombieTypeTemplate",
+            "aliases": [
+                "eighties_bass_metal"
+            ],
+            "objdata": {
+                "TypeName": "eighties_bass_metal",
+                "ZombieClass": "ZombieEightiesBass",
+                "IntegerID": 564,
+                "Properties": "RTID(ZombieEightiesBassMetal@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieEightiesBassGroup",
+                    "ZombieEightiesGargantuarGroup",
+                    "Eighties_Speaker"
+                ],
+                "AudioGroups": [
+                    "ZombieEightiesZombossAudio",
+                    "ZombossFutureAudio",
+                    "ZombieEightiesPunkAudio",
+                    "ZombieEightiesArcadeAudio",
+                    "ZombieEightiesGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_EightiesBass",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_80S_BASS",
+                "HomeWorld": "eighties"
+            }
+        },
+		{
+			"aliases": [
+				"ZombieEightiesBassMetal"
+			],
+			"objclass": "ZombieEightiesBassProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"#comment": "DebutOffset is synced to the position of the speaker that is dropped.  Please maintain sync.",
+				"DebutOffset": {
+					"x": 13,
+					"y": 13
+				},
+				"EatDPS": 100,
+				"EnragedDamageScale": 3,
+				"EnragedSpeedScale": 2,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 1100,
+				"JamStyle": [
+					"jam_metal"
+				],
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"Speed": 0.185,
+				"SoundOnDebut": "Play_Zomb_Future_Zomboss_Intro_Flyby",
+				"SpeakerType": "speaker_bass",
+				"ShockWaveSpawnInterval": 12,
+				"ShockWaveSpawnIntervalWhileJamming": 4,
+				"WavePointCost": 750,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"speaker_bass"
+			],
+			"objdata": {
+				"TypeName": "speaker_bass",
+				"GridItemClass": "GridItemSpeakerBass",
+				"Properties": "RTID(GridItemSpeakerBassDefault@GridItemProps)",
+				"ResourceGroups": [
+					"Eighties_Speaker"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridItemSpeakerBassDefault"
+			],
+			"objclass": "GridItemSpeakerBassProps",
+			"objdata": {
+				"#comment": "This can only be used with bassist zombie, as bassist is the only zombie can trigger the projectile",
+				"CanBeMowed": true,
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"speaker_damage0_idle",
+								"speaker_damage0",
+								"speaker_blast_damage0",
+								"speaker_flash_damage0"
+							],
+							"StartAtHealthPercent": 0.900000
+						},
+						{
+							"Layers": [
+								"speaker_damage1_idle",
+								"speaker_damage1",
+								"speaker_blast_damage1",
+								"speaker_flash_damage1"
+							],
+							"StartAtHealthPercent": 0.750000
+						},
+						{
+							"Layers": [
+								"speaker_damage2_idle",
+								"speaker_damage2",
+								"speaker_blast_damage2",
+								"speaker_flash_damage2"
+							],
+							"StartAtHealthPercent": 0.600000
+						},
+						{
+							"Layers": [
+								"speaker_damage3_idle",
+								"speaker_damage3",
+								"speaker_blast_damage3",
+								"speaker_flash_damage3"
+							],
+							"StartAtHealthPercent": 0.400000
+						},
+						{
+							"Layers": [
+								"speaker_damage4_idle",
+								"speaker_damage4",
+								"speaker_blast_damage4",
+								"speaker_flash_damage4"
+							],
+							"StartAtHealthPercent": 0.200000
+						},
+						{
+							"Layers": [
+								"speaker_damage5_idle",
+								"speaker_damage5",
+								"speaker_blast_damage5",
+								"speaker_flash_damage5"
+							],
+							"StartAtHealthPercent": 0
+						}
+					]
+				},
+				"Hitpoints": 750,
+				"PopAnim": "POPANIM_EFFECTS_80S_SPEAKER",
+				"PopAnimRenderOffset": {
+					"x": 97,
+					"y": 123
+				},
+				"PopAnimRigClass": "PopAnimRig",
+				"ScaledProps": [
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.300000,
+						"Arg2": 0.050000,
+						"Formula": "standard",
+						"Key": "SonicDamageAmount"
+					}
+				],
+				"ShockWaveProjectile": "RTID(ShockWaveDefault@ProjectileTypes)",
+				"ShockWaveSpawnOffset": {
+					"x": 0,
+					"y": -20
+				},
+				"SonicDamageAmount": 10
+			}
+		},
