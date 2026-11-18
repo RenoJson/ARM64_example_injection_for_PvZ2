@@ -100,7 +100,7 @@
     <IncludePath>D:\PVZ2 64bit lib\Public Template;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <IncludePath>D:\PVZ2 64bit lib\PvZ2;$(IncludePath)</IncludePath>
+    <IncludePath>D:\PVZ2 64bit lib\Public Template;$(IncludePath)</IncludePath>
     <TargetName>libChair</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">

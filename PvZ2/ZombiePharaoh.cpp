@@ -629,6 +629,20 @@ void hkPlantifyOnLoop(Zombie* thisPtr)
 
 void hkBleedingOutOnLoop() {}
 
+float hkGetHPUntilBleedOut(Zombie* zombie) {
+    if ((zombie->m_zombieFlags & 4) != 0) {
+        return 0.0f;
+    }
+
+    float fraction = hkGetHeadDrop(zombie);
+    if (fraction < 0.0f) {
+        return std::max(0.0f, zombie->m_hitpoints);
+    }
+
+    float headDropHP = zombie->m_maxHitpoints * fraction;
+    return std::max(0.0f, zombie->m_hitpoints - headDropHP);
+}
+
 bool hkCheckDoesZombiesWin(ZombiesAteYourBrainsModule* module, RtWeakPtr<Zombie> zombiePtr) {
     auto props = reinterpret_cast<ZombiesAteYourBrainsProperties*>(module->m_propertySheet.Get());
     auto zombie = reinterpret_cast<Zombie*>(zombiePtr.Get());
@@ -657,6 +671,7 @@ void ZombiePharaoh::ModInit() {
     PVZ2HookFunction(0xC4CEC8, (void*)IsInBleedingState, nullptr);
     PVZ2HookFunction(0xC4D594, (void*)hkCanBeTargetted, nullptr);
     PVZ2HookFunction(0xAD117C, (void*)SurferIsHeadDrop, nullptr);
+    PVZ2HookFunction(0xC4CE98, (void*)hkGetHPUntilBleedOut, nullptr);
     PatchZombieUpdate();
     PatchZombieSetCondition();
     LOGI("ZombiePharaoh finish init");
